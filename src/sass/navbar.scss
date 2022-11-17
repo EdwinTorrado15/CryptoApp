@@ -1,0 +1,23 @@
+@import './colors/colores.scss';
+
+.container_navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.15);
+
+    button {
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+        border: 0;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: $redFire;
+    }
+}
