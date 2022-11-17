@@ -3,10 +3,14 @@ import Inicio from "./Inicio";
 import "../sass/login.scss";
 
 const Login = () => {
+
+  // Referencias
   const user = useRef();
   const password = useRef();
   const getUser = localStorage.getItem("user");
   const getPassword = localStorage.getItem("password");
+
+  // Función para iniciar sesión
   const handleSubmit = () => {
     if (
       user.current.value === "admin" &&
@@ -19,6 +23,7 @@ const Login = () => {
 
   return (
     <>
+       {/* Validacion para continuar a la pagina principal */}
       {getUser && getPassword ? (
         <Inicio />
       ) : (
